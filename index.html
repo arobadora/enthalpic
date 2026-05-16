@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enthalpic — Pathway-agnostic MRV for marine carbon removal</title>
+  <meta name="description" content="Enthalpic builds quantum-enabled, pathway-agnostic sensing and intelligence infrastructure for marine carbon removal. Every pathway — nature-based or engineered — involves chemical or biological reactions. We measure their energetics." />
+  <meta property="og:title" content="Enthalpic — Pathway-agnostic MRV for marine carbon removal" />
+  <meta property="og:description" content="Quantum-enabled, pathway-agnostic MRV infrastructure for the full marine carbon removal ecosystem." />
+  <meta property="og:url" content="https://enthalpic.de" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://enthalpic.de/og-image.png" />
+  <link rel="canonical" href="https://enthalpic.de" />
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <header class="nav-bar" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="Enthalpic home">Enthalpic</a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#problem">Problem</a>
+        <a href="#technology">Technology</a>
+        <a href="#applications">Applications</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <a href="#problem">Problem</a>
+    <a href="#technology">Technology</a>
+    <a href="#applications">Applications</a>
+    <a href="#about">About</a>
+    <a href="#contact">Get in touch</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-badge">Carbon 13 &mdash; LEAP Berlin &bull; Quantum Technology Hub</div>
+      <h1>
+        Making ocean carbon<br />
+        <span class="text-gradient">measurable, verifiable,</span><br />
+        and investable.
+      </h1>
+      <p class="hero-lead">
+        One platform. Any marine carbon pathway. We are building the measurement
+        infrastructure for high-integrity marine carbon markets.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Contact &amp; collaborate</a>
+        <a href="#problem" class="btn btn-ghost">Learn more &darr;</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <span class="section-label">The problem</span>
+      </div>
+      <h2 class="section-title">
+        The mCDR ecosystem is diverse.<br />
+        MRV should be unified.
+      </h2>
+      <div class="text-block">
+        <p>
+          Marine carbon removal spans nature-based pathways — biomass growth, ocean fertilization,
+          blue carbon — and engineered pathways — ocean alkalinity enhancement, electrochemical
+          capture, biomass burial. All are scaling. All face the same bottleneck: buyers, regulators,
+          and insurers need direct, in-situ evidence that carbon is removed and stays removed.
+        </p>
+        <p>
+          Current MRV is pathway-specific: discrete water sampling, satellite proxies,
+          bespoke biogeochemical models. Sparse, delayed, expensive, and incomparable
+          across approaches. The gap between what projects claim and what can be verified
+          is the single largest risk to market growth.
+        </p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <h3>Diverse pathways, common physics</h3>
+          <p>Every carbon transformation — whether driven by photosynthesis, mineral dissolution, or microbial metabolism — produces measurable heat and electron-transfer signals. Current MRV ignores this common ground.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Sparse data, high stakes</h3>
+          <p>A handful of discrete water samples per square kilometre per quarter cannot resolve the fate of megatonne-scale carbon removal. Uncertainty feeds discount rates that destroy project economics.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Costly MRV</h3>
+          <p>Monitoring, reporting, and verification can consume 30–50% of project revenue. Scaling requires cheaper, faster, more credible approaches — and that starts with better sensors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <span class="section-label">The approach</span>
+      </div>
+      <h2 class="section-title">
+        Pathway-agnostic by design.<br />
+        Energetics as the universal signal.
+      </h2>
+      <div class="text-block">
+        <p>
+          Every carbon transformation in the ocean — whether driven by photosynthesis in biomass growth,
+          mineral dissolution in ocean alkalinity enhancement, or microbial metabolism in blue carbon
+          sediments — involves a transfer of electrons and a change in heat flow. This is the
+          <em>thermo-redox</em> signature: a universal signal that cuts across pathways.
+        </p>
+        <p>
+          Enthalpic's platform detects these signatures directly in the environment, in real time.
+          Because we measure the underlying reaction energetics — not pathway-specific proxies —
+          our approach is inherently pathway-agnostic. The same sensor stack works for OAE, biomass
+          burial, blue carbon, and beyond. Different pathways, same physics, different signal processing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Health Monitor -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02.5</span>
+        <span class="section-label">Real-time ecosystem performance</span>
+      </div>
+      <h2 class="section-title">
+        Like a wearable for<br />
+        the ocean.
+      </h2>
+      <div class="text-block">
+        <p>
+          Continuous, in-situ monitoring of carbon transformation activity — pace, permanence, and
+          cumulative impact. One dashboard, any marine carbon pathway.
+        </p>
+      </div>
+      <div class="monitor-widget">
+        <div class="monitor-header">
+          <div class="monitor-dot"></div>
+          <span>Enthalpic Monitor &mdash; Online</span>
+          <span class="monitor-badge">Live</span>
+        </div>
+        <div class="monitor-grid">
+          <div class="monitor-card">
+            <div class="monitor-card-label">Thermo-redox flux</div>
+            <div class="monitor-gauge">
+              <svg viewBox="0 0 200 120" class="gauge-svg">
+                <defs>
+                  <linearGradient id="gauge-grad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#4a8fe7" />
+                    <stop offset="100%" stop-color="#00c9a7" />
+                  </linearGradient>
+                </defs>
+                <path d="M30 100 A70 70 0 0 1 170 100" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="12" stroke-linecap="round" />
+                <path d="M30 100 A70 70 0 0 1 170 100" fill="none" stroke="url(#gauge-grad)" stroke-width="12" stroke-linecap="round"
+                  stroke-dasharray="307" stroke-dashoffset="92" />
+              </svg>
+              <div class="gauge-center">
+                <span class="gauge-value">14.6</span>
+                <span class="gauge-unit">kW</span>
+              </div>
+            </div>
+            <div class="monitor-sub">Baseline: 11.2 kW</div>
+          </div>
+          <div class="monitor-card">
+            <div class="monitor-card-label">Pace</div>
+            <div class="monitor-big-value">
+              <span class="big-value">2.4</span>
+              <span class="big-unit">tCO₂e</span>
+            </div>
+            <div class="monitor-sub">per day &bull; +8% vs baseline</div>
+            <div class="monitor-spark">
+              <svg viewBox="0 0 160 40" class="spark-svg">
+                <defs>
+                  <linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#00c9a7" stop-opacity="0.5" />
+                    <stop offset="100%" stop-color="#00c9a7" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 30 Q20 35 40 25 T80 28 T120 15 T160 8" fill="none" stroke="#00c9a7" stroke-width="2" stroke-linecap="round" />
+                <path d="M0 30 Q20 35 40 25 T80 28 T120 15 T160 8 L160 40 L0 40 Z" fill="url(#spark-fill)" opacity="0.15" />
+              </svg>
+            </div>
+          </div>
+          <div class="monitor-card monitor-card-accent">
+            <div class="monitor-card-label">Total verified</div>
+            <div class="monitor-big-value">
+              <span class="big-value accent">43.8</span>
+              <span class="big-unit">tCO₂e</span>
+            </div>
+            <div class="monitor-sub">cumulative &bull; since deployment</div>
+            <div class="monitor-bar">
+              <div class="monitor-bar-track">
+                <div class="monitor-bar-fill" style="width: 73%;"></div>
+              </div>
+              <div class="monitor-bar-labels">
+                <span>0</span>
+                <span>target: 60 tCO₂e</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology pillars -->
+  <section id="technology" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <span class="section-label">Our technology</span>
+      </div>
+      <h2 class="section-title">
+        Quantum-enabled sensing<br />
+        for carbon transformation.
+      </h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Quantum-enabled thermo-redox sensing</h3>
+          <p>Our core sensor technology uses quantum-sensitive materials to detect minute heat and electron-transfer signatures from carbon transformations. Developed in partnership with Fraunhofer Institute (Start a Factory). Provides real-time, in-situ evidence of carbon cycling activity at sensitivities conventional sensors cannot reach.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Microfluidic sampling</h3>
+          <p>Low-power, in-situ microfluidic platforms for automated collection and analysis of porewater and seawater samples. Enables high-resolution biogeochemical profiling across depth and time.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </div>
+          <h3>AI uncertainty modeling</h3>
+          <p>Probabilistic models that fuse sensor data with physical priors to quantify uncertainty in carbon permanence and transformation pathway attribution. Pathway-agnostic by design — applies equally to OAE, biomass, blue carbon, and electrochemical approaches.</p>
+        </div>
+      </div>
+      <div class="tech-note">
+        <p>Quantum sensor technology developed in partnership with <strong>Fraunhofer Institute (Start a Factory)</strong>. Microfluidic sampling in collaboration with academic partners. AI modeling is in early prototyping.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section id="applications" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <span class="section-label">Applications</span>
+      </div>
+      <h2 class="section-title">
+        A single platform,<br />
+        any marine carbon pathway.
+      </h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <span class="app-number">01</span>
+          <h3>Ocean alkalinity enhancement MRV</h3>
+          <p>Continuous in-situ measurement of mineral dissolution rates, carbonate chemistry evolution, and carbon transformation pathways. Our platform captures the thermo-redox signature of alkalinity addition directly, providing verification-grade evidence for OAE project developers and credit buyers.</p>
+        </div>
+        <div class="app-card">
+          <span class="app-number">02</span>
+          <h3>Marine CDR verification</h3>
+          <p>Independent monitoring for direct ocean capture, biomass burial, and electrochemical approaches. Pathway attribution and permanence tracking through direct thermo-redox measurement.</p>
+        </div>
+        <div class="app-card">
+          <span class="app-number">03</span>
+          <h3>Blue carbon MRV</h3>
+          <p>Continuous sediment carbon dynamics monitoring in mangrove, seagrass, and salt marsh ecosystems for high-integrity credit issuance.</p>
+        </div>
+        <div class="app-card">
+          <span class="app-number">04</span>
+          <h3>Pilot verification &amp; research</h3>
+          <p>Deployment-grade measurement for research pilots, mesocosm studies, and field trials requiring publication-quality evidence of carbon outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Now -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <span class="section-label">Why now</span>
+      </div>
+      <h2 class="section-title">
+        Measurement infrastructure<br />
+        is the bottleneck.
+      </h2>
+      <div class="text-block">
+        <p>
+          Ocean alkalinity enhancement is moving from research to deployment. Biomass burial pilots are scaling. Blue carbon credits are trading. DOE, EU Innovation Fund, and Frontier are backing multi-million-tonne projects across the full mCDR spectrum. But buyers like Microsoft, Stripe, and JP Morgan are clear: MRV needs to catch up — and it needs to be comparable across pathways.
+        </p>
+        <p>
+          The current standard — pathway-specific grab sampling + bespoke models — cannot deliver the per-tonne verification that high-quality credits demand, nor the cross-pathway comparability that efficient markets require. Measurement infrastructure, not project pipeline, is becoming the binding constraint on market growth. Enthalpic is building the unified sensing layer to close that gap.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Status -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <span class="section-label">Status</span>
+      </div>
+      <h2 class="section-title">
+        Built at Carbon&nbsp;13,<br />
+        based at LEAP Berlin.
+      </h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="public/Alberto.png" alt="Alberto Robador, founder of Enthalpic" />
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            Enthalpic was founded by Alberto Robador, an assistant professor for geomicrobiology
+            and environmental biogeochemistry at the University of Southern California,
+            whose research sits at the intersection of microbial energetics, redox
+            thermodynamics, and environmental sensing.
+          </p>
+          <p>
+            Alberto is part of the Carbon 13 venture-build programme and
+            is developing Enthalpic from LEAP Berlin, within Berlin's Quantum Technology
+            Hub, with ongoing conversations with mCDR project operators and developers, marine
+            biogeochemistry research groups, and ecosystem monitoring partners.
+          </p>
+          <p>
+            The company is at an early stage, currently focused on sensor prototyping
+            for biological and chemical carbon transformation signals, AI model development, and
+            partnership development with field-deployment and research partners.
+          </p>
+        </div>
+        <div class="about-credibility">
+          <div class="credibility-card">
+            <h3>Scientific foundation</h3>
+            <p>Geomicrobiology &bull; Microbial energetics &bull; Redox thermodynamics &bull; Biogeochemical sensing &bull; University of Southern California</p>
+          </div>
+          <div class="credibility-card">
+            <h3>R&amp;D Partnership</h3>
+            <p>Fraunhofer Institute (Start a Factory) — quantum sensor development for environmental monitoring</p>
+          </div>
+          <div class="credibility-card">
+            <h3>Programme</h3>
+            <p>Carbon 13 venture-building programme (alumnus)</p>
+          </div>
+          <div class="credibility-card">
+            <h3>Location</h3>
+            <p>LEAP Berlin &bull; Berlin's Quantum Technology Hub &bull; Developing with EU research and field partners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <span class="section-label">Connect</span>
+        </div>
+        <h2 class="section-title">
+          One measurement layer for<br />
+          the full mCDR ecosystem.
+        </h2>
+        <p class="cta-text">
+          We are looking for pathway partners, research collaborators, and
+          mission-aligned investors. If you are deploying OAE, biomass, blue carbon,
+          or any marine carbon removal pathway — and need better, comparable MRV —
+          we would like to hear from you.
+        </p>
+        <div class="cta-actions">
+          <a href="mailto:hello@enthalpic.de" class="btn btn-primary">hello@enthalpic.de</a>
+          <a href="#technology" class="btn btn-ghost">Read about our technology</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo">Enthalpic</span>
+          <p class="footer-tagline">Pathway-agnostic MRV infrastructure for marine carbon removal.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@enthalpic.de">hello@enthalpic.de</a>
+          <a href="#technology">Technology</a>
+          <a href="#about">About</a>
+          <a href="#">Imprint</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Enthalpic UG. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
