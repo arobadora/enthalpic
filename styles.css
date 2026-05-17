@@ -392,8 +392,8 @@ h1, h2, h3, h4 {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 32px;
-  max-width: 780px;
+  padding: 40px;
+  max-width: 920px;
 }
 
 .disclaimer {
@@ -408,14 +408,14 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 10px;
   margin-bottom: 28px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #6a7d9a;
 }
 
 .monitor-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #00c9a7;
   animation: monitorPulse 1.5s ease-in-out infinite;
@@ -423,29 +423,29 @@ h1, h2, h3, h4 {
 
 @keyframes monitorPulse {
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 201, 167, 0.4); }
-  50%      { opacity: 0.7; box-shadow: 0 0 0 6px rgba(0, 201, 167, 0); }
+  50%      { opacity: 0.7; box-shadow: 0 0 0 8px rgba(0, 201, 167, 0); }
 }
 
 .monitor-badge {
   margin-left: auto;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #00c9a7;
   background: rgba(0, 201, 167, 0.08);
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 100px;
 }
 
 .monitor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 24px;
 }
 
 .monitor-card {
-  padding: 24px 20px;
+  padding: 32px 24px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.04);
@@ -458,19 +458,19 @@ h1, h2, h3, h4 {
 }
 
 .monitor-card-label {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #4a5c7a;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* Gauge */
 .monitor-gauge {
   position: relative;
-  width: 140px;
-  height: 84px;
+  width: 170px;
+  height: 102px;
   margin: 0 auto 8px;
   overflow: hidden;
 }
@@ -491,14 +491,14 @@ h1, h2, h3, h4 {
 }
 
 .gauge-value {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #e8edf5;
   line-height: 1;
 }
 
 .gauge-unit {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #4a5c7a;
 }
@@ -513,7 +513,7 @@ h1, h2, h3, h4 {
 }
 
 .big-value {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #e8edf5;
   line-height: 1;
@@ -527,21 +527,21 @@ h1, h2, h3, h4 {
 }
 
 .big-unit {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #6a7d9a;
 }
 
 .monitor-sub {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: #4a5c7a;
   line-height: 1.4;
 }
 
 /* Sparkline */
 .monitor-spark {
-  margin-top: 12px;
-  height: 32px;
+  margin-top: 16px;
+  height: 40px;
 }
 
 .spark-svg {
@@ -551,19 +551,19 @@ h1, h2, h3, h4 {
 
 /* Progress bar */
 .monitor-bar {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .monitor-bar-track {
-  height: 6px;
-  border-radius: 3px;
+  height: 8px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.04);
   overflow: hidden;
 }
 
 .monitor-bar-fill {
   height: 100%;
-  border-radius: 3px;
+  border-radius: 4px;
   background: linear-gradient(90deg, #4a8fe7, #00c9a7);
   transition: width 0.6s ease;
 }
@@ -571,8 +571,8 @@ h1, h2, h3, h4 {
 .monitor-bar-labels {
   display: flex;
   justify-content: space-between;
-  margin-top: 6px;
-  font-size: 0.65rem;
+  margin-top: 8px;
+  font-size: 0.75rem;
   color: #4a5c7a;
 }
 
