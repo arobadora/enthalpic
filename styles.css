@@ -395,6 +395,13 @@ h1, h2, h3, h4 {
   max-width: 780px;
 }
 
+.disclaimer {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  color: #5a6d8a;
+  text-align: center;
+}
+
 .monitor-header {
   display: flex;
   align-items: center;
