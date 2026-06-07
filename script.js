@@ -37,7 +37,7 @@
   /* ----- Scroll reveal (IntersectionObserver) ----- */
   function observeReveal() {
     var els = document.querySelectorAll(
-      '.problem-card, .tech-card, .app-card, .credibility-card, .text-block, .about-text, .section-title, .cta-box'
+      '.problem-card, .tech-card, .app-card, .credibility-card, .text-block, .about-text, .section-title, .cta-box, .stack-layer, .monitor-widget'
     );
 
     if (!('IntersectionObserver' in window)) {
