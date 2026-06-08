@@ -737,6 +737,52 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
+.app-card-need {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a5c7a;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.app-card-help {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #00c9a7;
+  margin: 16px 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.app-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.app-card li {
+  font-size: 0.85rem;
+  color: #8899b4;
+  line-height: 1.6;
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.app-card li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #4a8fe7;
+  font-weight: 700;
+}
+
+.app-card-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b0c0d8;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
 /* ----- Ocean Technology Stack ----- */
 .stack-visual {
   max-width: 780px;
