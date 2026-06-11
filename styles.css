@@ -585,6 +585,81 @@ h1, h2, h3, h4 {
   }
 }
 
+/* ----- Beachhead cards ----- */
+.beachhead-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+  max-width: 920px;
+}
+
+.beachhead-card {
+  padding: 32px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.beachhead-card:hover {
+  border-color: rgba(0, 201, 167, 0.15);
+  transform: translateY(-2px);
+}
+
+.beachhead-card-accent {
+  background: rgba(0, 201, 167, 0.03);
+  border-color: rgba(0, 201, 167, 0.08);
+}
+
+.beachhead-card-accent:hover {
+  border-color: rgba(0, 201, 167, 0.2);
+}
+
+.beachhead-card-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #4a5c7a;
+  margin-bottom: 8px;
+}
+
+.beachhead-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #e8edf5;
+}
+
+.beachhead-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.beachhead-card li {
+  font-size: 0.9rem;
+  color: #8899b4;
+  line-height: 1.6;
+  padding: 5px 0 5px 18px;
+  position: relative;
+}
+
+.beachhead-card li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #4a8fe7;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .beachhead-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ----- Problem cards ----- */
 .problem-grid {
   display: grid;
