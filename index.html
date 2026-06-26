@@ -324,7 +324,7 @@ footer{border-top:1px solid var(--border);padding:44px 56px}
     <a href="#how">How It Works</a>
     <a href="#apps">Applications</a>
     <a href="#why">Why Now</a>
-    <a href="#dashboard">Live Data</a>
+    <a href="#beachhead">Live Data</a>
   </div>
   <button class="nav-cta" onclick="document.getElementById('cta-email').focus()">Get in touch</button>
 </nav>
@@ -503,7 +503,7 @@ footer{border-top:1px solid var(--border);padding:44px 56px}
 </section>
 
 <!-- 04 BEACHHEAD -->
-<section id="beachhead">
+<section id="beachhead" class="dash-section">
   <div class="wrap">
     <div class="eyebrow sr"><span class="ey-num">04</span> Our beachhead</div>
     <h2 class="st sr sr-d1">Starting with<br><span class="ac">marine carbon removal.</span></h2>
@@ -529,6 +529,91 @@ footer{border-top:1px solid var(--border);padding:44px 56px}
         </ul>
       </div>
     </div>
+
+    <!-- INTEGRATED LIVE INTELLIGENCE DASHBOARD -->
+    <div class="dash-head" style="margin-top:64px">
+      <div>
+        <div class="eyebrow" style="margin-bottom:14px">Live intelligence</div>
+        <h2 class="st">Real-time ocean state</h2>
+      </div>
+      <div class="dash-live">
+        <div class="dash-live-dot"></div>
+        LIVE &middot; Pacific Basin Array
+      </div>
+    </div>
+
+    <div class="metric-row">
+      <div class="mc"><div class="mc-lbl">Data points today</div><div><span class="mc-val" id="live-count" style="color:var(--cyan)">873,781</span></div></div>
+      <div class="mc"><div class="mc-lbl">Active alerts</div><div><span class="mc-val" style="color:var(--alert)">3</span><span class="mc-unit">anomalies</span></div></div>
+      <div class="mc"><div class="mc-lbl">Tons per day removed</div><div><span class="mc-val" style="color:var(--green)">23.7</span><span class="mc-unit">tCO2e</span></div></div>
+      <div class="mc"><div class="mc-lbl">Total verified</div><div><span class="mc-val" style="color:var(--green)">4,219</span><span class="mc-unit">tCO2e</span></div></div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-top">
+        <span class="chart-title">Ecosystem performance &mdash; Watts</span>
+        <div class="chart-legend">
+          <div class="leg-item"><div class="leg-line" style="background:var(--cyan)"></div>Surface</div>
+          <div class="leg-item"><div class="leg-line" style="background:rgba(255,92,46,0.7)"></div>Thermocline</div>
+          <div class="leg-item"><div class="leg-line" style="background:#5b9bd5"></div>Deep</div>
+        </div>
+      </div>
+      <div style="position:relative;width:100%;height:220px">
+        <canvas id="oceanChart"></canvas>
+      </div>
+      <div class="anomaly-bar">
+        <div class="an-accent"></div>
+        <div>
+          <div class="an-lbl">THERMAL ANOMALY DETECTED &middot; 14:30 &ndash; 17:00 UTC</div>
+          <div class="an-desc">Surface temperature depression &minus;1.4&deg;C at array N-203. Possible upwelling signature. AI classification: 87% confidence.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nodes-card">
+      <div class="nodes-hdr">
+        <span class="nh-title">Active sensor nodes &mdash; Pacific Basin</span>
+        <span class="nh-count">5 of 847 shown</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="nt">
+          <thead>
+            <tr>
+              <th>NODE ID</th><th>POSITION</th><th>DEPTH</th><th>TONS REMOVED</th><th>SIGNAL</th><th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="nid">N-047</td><td class="npos">23.4&deg;N / 158.2&deg;W</td><td>2,840 m</td><td>8.3 tCO2e</td>
+              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:98%;background:var(--cyan)"></div></div><span style="color:var(--muted)">98%</span></div></td>
+              <td><span class="sp sp-a">ACTIVE</span></td>
+            </tr>
+            <tr>
+              <td class="nid">N-112</td><td class="npos">24.1&deg;N / 160.5&deg;W</td><td>1,920 m</td><td>12.1 tCO2e</td>
+              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:94%;background:var(--cyan)"></div></div><span style="color:var(--muted)">94%</span></div></td>
+              <td><span class="sp sp-a">ACTIVE</span></td>
+            </tr>
+            <tr>
+              <td class="nid">N-088</td><td class="npos">22.9&deg;N / 157.1&deg;W</td><td>3,105 m</td><td>7.6 tCO2e</td>
+              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:97%;background:var(--cyan)"></div></div><span style="color:var(--muted)">97%</span></div></td>
+              <td><span class="sp sp-a">ACTIVE</span></td>
+            </tr>
+            <tr>
+              <td class="nid">N-203</td><td class="npos">23.8&deg;N / 161.2&deg;W</td><td>890 m</td><td>0.4 tCO2e</td>
+              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:72%;background:var(--alert)"></div></div><span style="color:var(--muted)">72%</span></div></td>
+              <td><span class="sp sp-al">ALERT</span></td>
+            </tr>
+            <tr>
+              <td class="nid">N-064</td><td class="npos">21.7&deg;N / 159.8&deg;W</td><td>4,210 m</td><td>4.9 tCO2e</td>
+              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:99%;background:var(--cyan)"></div></div><span style="color:var(--muted)">99%</span></div></td>
+              <td><span class="sp sp-a">ACTIVE</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--muted);letter-spacing:.06em;margin-top:16px;opacity:.7">*Data shown for illustrative purposes &mdash; not representative of active deployments.</p>
   </div>
 </section>
 
@@ -791,94 +876,6 @@ footer{border-top:1px solid var(--border);padding:44px 56px}
 </section>
 
 
-<!-- LIVE DASHBOARD -->
-<section class="dash-section" id="dashboard">
-  <div class="wrap">
-    <div class="dash-head">
-      <div>
-        <div class="eyebrow" style="margin-bottom:14px">Live intelligence</div>
-        <h2 class="st">Real-time ocean state</h2>
-      </div>
-      <div class="dash-live">
-        <div class="dash-live-dot"></div>
-        LIVE &middot; Pacific Basin Array
-      </div>
-    </div>
-
-    <div class="metric-row">
-      <div class="mc"><div class="mc-lbl">Data points today</div><div><span class="mc-val" id="live-count" style="color:var(--cyan)">873,781</span></div></div>
-      <div class="mc"><div class="mc-lbl">Active alerts</div><div><span class="mc-val" style="color:var(--alert)">3</span><span class="mc-unit">anomalies</span></div></div>
-      <div class="mc"><div class="mc-lbl">Tons per day removed</div><div><span class="mc-val" style="color:var(--green)">23.7</span><span class="mc-unit">tCO2e</span></div></div>
-      <div class="mc"><div class="mc-lbl">Total verified</div><div><span class="mc-val" style="color:var(--green)">4,219</span><span class="mc-unit">tCO2e</span></div></div>
-    </div>
-
-    <div class="chart-card">
-      <div class="chart-top">
-        <span class="chart-title">Ecosystem performance &mdash; Watts</span>
-        <div class="chart-legend">
-          <div class="leg-item"><div class="leg-line" style="background:var(--cyan)"></div>Surface</div>
-          <div class="leg-item"><div class="leg-line" style="background:rgba(255,92,46,0.7)"></div>Thermocline</div>
-          <div class="leg-item"><div class="leg-line" style="background:#5b9bd5"></div>Deep</div>
-        </div>
-      </div>
-      <div style="position:relative;width:100%;height:220px">
-        <canvas id="oceanChart"></canvas>
-      </div>
-      <div class="anomaly-bar">
-        <div class="an-accent"></div>
-        <div>
-          <div class="an-lbl">THERMAL ANOMALY DETECTED &middot; 14:30 &ndash; 17:00 UTC</div>
-          <div class="an-desc">Surface temperature depression &minus;1.4&deg;C at array N-203. Possible upwelling signature. AI classification: 87% confidence.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="nodes-card">
-      <div class="nodes-hdr">
-        <span class="nh-title">Active sensor nodes &mdash; Pacific Basin</span>
-        <span class="nh-count">5 of 847 shown</span>
-      </div>
-      <div style="overflow-x:auto">
-        <table class="nt">
-          <thead>
-            <tr>
-              <th>NODE ID</th><th>POSITION</th><th>DEPTH</th><th>TONS REMOVED</th><th>SIGNAL</th><th>STATUS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="nid">N-047</td><td class="npos">23.4&deg;N / 158.2&deg;W</td><td>2,840 m</td><td>8.3 tCO2e</td>
-              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:98%;background:var(--cyan)"></div></div><span style="color:var(--muted)">98%</span></div></td>
-              <td><span class="sp sp-a">ACTIVE</span></td>
-            </tr>
-            <tr>
-              <td class="nid">N-112</td><td class="npos">24.1&deg;N / 160.5&deg;W</td><td>1,920 m</td><td>12.1 tCO2e</td>
-              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:94%;background:var(--cyan)"></div></div><span style="color:var(--muted)">94%</span></div></td>
-              <td><span class="sp sp-a">ACTIVE</span></td>
-            </tr>
-            <tr>
-              <td class="nid">N-088</td><td class="npos">22.9&deg;N / 157.1&deg;W</td><td>3,105 m</td><td>7.6 tCO2e</td>
-              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:97%;background:var(--cyan)"></div></div><span style="color:var(--muted)">97%</span></div></td>
-              <td><span class="sp sp-a">ACTIVE</span></td>
-            </tr>
-            <tr>
-              <td class="nid">N-203</td><td class="npos">23.8&deg;N / 161.2&deg;W</td><td>890 m</td><td>0.4 tCO2e</td>
-              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:72%;background:var(--alert)"></div></div><span style="color:var(--muted)">72%</span></div></td>
-              <td><span class="sp sp-al">ALERT</span></td>
-            </tr>
-            <tr>
-              <td class="nid">N-064</td><td class="npos">21.7&deg;N / 159.8&deg;W</td><td>4,210 m</td><td>4.9 tCO2e</td>
-              <td><div class="sig-bar"><div class="sig-track"><div class="sig-fill" style="width:99%;background:var(--cyan)"></div></div><span style="color:var(--muted)">99%</span></div></td>
-              <td><span class="sp sp-a">ACTIVE</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <p style="font-family:'JetBrains Mono',monospace;font-size:.58rem;color:var(--muted);letter-spacing:.06em;margin-top:16px;opacity:.7">*Data shown for illustrative purposes &mdash; not representative of active deployments.</p>
-  </div>
-</section>
 <section class="cta-s">
   <div class="cta-grad"></div>
   <div class="cta-in sr">
