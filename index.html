@@ -564,7 +564,7 @@ footer{border-top:1px solid var(--border);padding:44px 56px}
       <div class="anomaly-bar">
         <div class="an-accent"></div>
         <div>
-          <div class="an-lbl">THERMAL ANOMALY DETECTED &middot; 14:30 &ndash; 17:00 UTC</div>
+          <div class="an-lbl">ENERGY ANOMALY DETECTED &middot; 14:30 &ndash; 17:00 UTC</div>
           <div class="an-desc">Surface temperature depression &minus;1.4&deg;C at array N-203. Possible upwelling signature. AI classification: 87% confidence.</div>
         </div>
       </div>
@@ -1052,7 +1052,7 @@ new Chart(octx,{
     },
     scales:{
       x:{ticks:{color:'#6ba3b8',font:{family:'JetBrains Mono',size:10},maxRotation:0},grid:{color:'rgba(0,200,232,0.05)'},border:{display:false}},
-      y:{ticks:{color:'#6ba3b8',font:{family:'JetBrains Mono',size:10},callback:v=>v+'m'},grid:{color:'rgba(0,200,232,0.05)'},border:{display:false},reverse:true,min:0,max:5000}
+      y:{ticks:{color:'#6ba3b8',font:{family:'JetBrains Mono',size:10},callback:v=>v+'nW'},grid:{color:'rgba(0,200,232,0.05)'},border:{display:false},min:0,max:24}
     }
   }
 });
